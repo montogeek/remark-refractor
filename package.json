@@ -1,0 +1,13 @@
+{
+  "name": "remark-refractor",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "git@github.com:montogeek/remark-refractor.git",
+  "author": "Fernando Montoya <montogeek@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "prism-languages": "0.4.0",
+    "refractor": "2.4.1",
+    "unist-util-visit": "1.3.1"
+  }
+}
