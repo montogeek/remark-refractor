@@ -1,6 +1,6 @@
 const refractor = require('refractor/core.js');
 const visit = require('unist-util-visit');
-const languages = require('prism-languages');
+const languages = refractor.listLanguages();
 
 refractor.register(require('refractor/lang/bash.js'));
 refractor.register(require('refractor/lang/diff.js'));
@@ -9,6 +9,7 @@ refractor.register(require('refractor/lang/json.js'));
 refractor.register(require('refractor/lang/typescript.js'));
 refractor.register(require('refractor/lang/nginx.js'));
 refractor.register(require('refractor/lang/ruby.js'));
+refractor.register(require('refractor/lang/scss.js'));
 refractor.register(require("./js-links-details.js"));
 
 function attacher({ include, exclude } = {}) {
@@ -43,7 +44,7 @@ function attacher({ include, exclude } = {}) {
           }
         });
       } catch (e) {
-        if (!languages[lang]) {
+        if (!languages.includes(lang)) {
           console.warn('Prism does not support this language: ', lang);
         } else {
           console.warn('Prism failed to highlight: ', e);
