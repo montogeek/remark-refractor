@@ -93,10 +93,6 @@ parse-entities@^2.0.0:
     is-decimal "^1.0.0"
     is-hexadecimal "^1.0.0"
 
-prism-languages@0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/prism-languages/-/prism-languages-0.4.0.tgz#7b36964ac896909f888d3355aa9ac6055b116e87"
-
 prismjs@~1.20.0:
   version "1.20.0"
   resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.20.0.tgz#9b685fc480a3514ee7198eac6a3bf5024319ff03"
